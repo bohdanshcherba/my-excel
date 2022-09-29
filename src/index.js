@@ -1,4 +1,4 @@
 import './index.scss'
 
 
-console.log('hi')
+console.log('Hello world')
