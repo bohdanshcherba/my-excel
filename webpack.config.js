@@ -49,7 +49,7 @@ module.exports = {
     plugins: [
 
         new HTMLWebpackPlugin({
-            template: 'index.html',
+            template: path.resolve(__dirname, 'public/index.html'),
             minify: {
                 removeComments: isProd,
                 collapseWhitespace: isProd,
@@ -58,7 +58,7 @@ module.exports = {
         new CopyPlugin(
             {
                 patterns: [{
-                    from: path.resolve(__dirname, 'src/favicon.ico'),
+                    from: path.resolve(__dirname, 'public/favicon.ico'),
                     to: path.resolve(__dirname, 'dist'),
                 }],
             }),
