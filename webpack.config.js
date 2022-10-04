@@ -49,7 +49,7 @@ module.exports = {
     plugins: [
 
         new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, 'public/index.html'),
+            template: path.resolve(__dirname, 'src/index.html'),
             minify: {
                 removeComments: isProd,
                 collapseWhitespace: isProd,
